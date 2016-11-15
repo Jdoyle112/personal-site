@@ -25,6 +25,28 @@ p, span {
 	font-family: 'Lato', sans-serif !important;
 }
 
+
+/* header */
+
+header nav ul {
+	list-style-type: none;
+	padding-left: 0;
+	text-align: center;
+	margin: 0 auto;
+}
+
+header nav ul li {
+	display: inline-block;
+	padding: 20px 30px;
+	font-size: 16px;
+	font-family: 'Lato', sans-serif !important;
+}
+
+header nav ul li a {
+	text-decoration: none;
+}
+
+
 /* section headings */
 
 
@@ -76,19 +98,41 @@ p, span {
 
 
 .section.main {
-	height: 100vh;
-	/*background: url('http://base.dev/wp-content/uploads/2016/11/sky.jpg') no-repeat center center;*/
-	background-size: cover !important;
 	padding: 0;
+	background: linear-gradient(270deg, #246655, #42b1bd, #425abd, #a142bd);
+background-size: 300% 300%;
+
+-webkit-animation: BgAnimation 29s ease infinite;
+-moz-animation: BgAnimation 29s ease infinite;
+animation: BgAnimation 29s ease infinite;
+
+}
+
+@-webkit-keyframes BgAnimation {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes BgAnimation {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes BgAnimation { 
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
 }
 
 .main .content {
 	text-align: center;
-	padding-top: 20%;
+	padding: 10% 0;
 }
 
 .main .content h1 {
 	font-size: 60px;
+	text-shadow: 2px 2px #000;
+	color: #fff !important;
 }
 
 .main .content p {
@@ -366,7 +410,7 @@ p, span {
 	height: 350px;
 	display: flex;
 	justify-content: center;
-	margin-bottom: 100px;
+	
 }
 
 .featured-area .title {
@@ -425,11 +469,10 @@ p, span {
 	list-style: none;
 }
 
-.right-side .sidebar .home-link {
-	font-weight: bold;
-	font-style: italic;
-	text-decoration: none;
+.right-side li {
+	list-style: none;
 }
+
 
 .right-side .sidebar h2 {
 	font-size: 24px;
@@ -446,5 +489,36 @@ article .content {
 
 .comment-form-comment #comment {
 	width: 100%;
+}
+
+.blog-underline {
+	background-color: #0375b4 !important;
+	height: 3px;
+	margin-bottom: 100px;
+	margin-top: 0;
+	width: 100%;
+}
+
+.entry-content {
+	font-size: 16px;
+}
+
+
+/* search filter results */
+
+form.searchandfilter {
+	color: #0375b4;
+}
+
+form.searchandfilter input {
+	margin-right: 5px !important;
+}
+
+form.searchandfilter h3{
+	color: #0375b4 !important;
+}
+
+.widget_recent_entries li {
+	padding: 5px 0;
 }
 

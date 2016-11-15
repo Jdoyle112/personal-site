@@ -27,7 +27,17 @@
 
 <body>
 <div id="page" class="site">
+	<header id="masthead" class="site-header" role="banner">
+		<div class="container">
+			<nav id="site-navigation" class="main-navigation" role="navigation">
+				<?php if( is_front_page() ){ ?>
+					<?php wp_nav_menu( array( 'menu' => 'Main','theme_location' => 'primary_navigation', 'container' => NULL ) ); ?>
+				<?php } else { ?>
+					<?php wp_nav_menu( array( 'menu' => 'Secondary', 'container' => NULL ) ); ?>
+				<?php } ?>
+			</nav><!-- #site-navigation -->
+		</div>
+	</header><!-- #masthead -->
 	<div class="site-inner">
-
-
 		<div id="content" class="site-content">
+

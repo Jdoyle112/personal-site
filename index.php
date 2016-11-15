@@ -20,6 +20,7 @@ get_header();
 $id = get_queried_object_id();
 $image = wp_get_attachment_image_src( get_post_thumbnail_id( $id ), 'full' );
 $url = $image[0];
+
 ?>
 
 	<div id="primary" class="content-area">
@@ -30,20 +31,22 @@ $url = $image[0];
 			<h1>Blog</h1>
 		</div>
 	</div>
+	<div class="blog-underline"></div>
 	<div class="section content">
 		<div class="container">
 			<div class="left-side">
+				<?php echo do_shortcode('[searchandfilter id="44" show="results"]');  ?>
 				<?php if ( have_posts() ) : ?>
 					<?php
 					// Start the loop.
 					while ( have_posts() ) : the_post();
-
+						
 						/*
 						 * Include the Post-Format-specific template for the content.
 						 * If you want to override this in a child theme, then include a file
 						 * called content-___.php (where ___ is the Post Format name) and that will be used instead.
 						 */
-						get_template_part( 'template-parts/content', get_post_format() );
+						//get_template_part( 'template-parts/content', get_post_format() );
 
 
 					// End the loop.
@@ -60,7 +63,10 @@ $url = $image[0];
 				?>
 			</div>
 			<div class="right-side">
-				<?php get_sidebar();  ?>
+				<div class="sidebar">
+					<?php dynamic_sidebar('sidebar-categories');  ?>
+				</div>
+				
 			</div>	
 		</div>
 	</div>
@@ -68,5 +74,5 @@ $url = $image[0];
 		</main><!-- .site-main -->
 	</div><!-- .content-area -->
 
-<?php get_sidebar(); ?>
+
 <?php get_footer(); ?>

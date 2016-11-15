@@ -181,6 +181,14 @@ function twentysixteen_widgets_init() {
 		'before_title'  => '<h2 class="widget-title">',
 		'after_title'   => '</h2>',
 	) );
+
+	register_sidebar( array(
+	    'name' => __( 'Categories Sidebar', 'srcollab' ),
+	    'id' => 'sidebar-categories',
+	    'description' => __( 'Widgets in this area will be on the Categories sidebar.', 'srcollab' ),
+		'before_title'  => '<h2 class="widget-title">',
+		'after_title'   => '</h2>',
+	) );
 }
 add_action( 'widgets_init', 'twentysixteen_widgets_init' );
 
@@ -434,7 +442,13 @@ function twentysixteen_widget_tag_cloud_args( $args ) {
 }
 add_filter( 'widget_tag_cloud_args', 'twentysixteen_widget_tag_cloud_args' );
 
+function categories_filter($query) {
+    if ( !is_admin() && is_user_logged_in() && $query->is_main_query() ) {
 
+            $query->set('post_status', array( 'publish', 'draft' ) );
+        
+    }
+}
 
 /* register cpts */
 

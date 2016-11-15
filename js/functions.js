@@ -198,7 +198,7 @@
 		belowEntryMetaClass( 'blockquote.alignleft, blockquote.alignright' );
 
 		    $('.typing').typed({
-        strings: ["Board Games.", "Hiking.", "Movies.", "My Wife.", "Narcos.", "Technology.", "Comfort Food.", "Ice Cream.", "Rock Climbing.", "Video Games.", "Bon Fires.", "Camping.", "Motorcycles.", "Vroom vroom.", "Biking.", "Football.", "Fantasy Football.", "Sports.", "Travel.", "Family.", "Star Wars.", "Mythology."],
+        strings: ["Web Professional.", "Creator.", "Inovator.", "Problem Solver.", "Creative Thinker.", "Team Player", "Husband.", "Geek.", "Tech Enthusiast.", "Outdoors Junkie.", "Comfort Food Lover.", "Motorcyclist.", "Gamer.", "Board Game Nerd.", "Sports Addict.", "Competitve Dude.", "Fantasy Football Commish.", "Traveler.", "Lover of Storytelling.", "Buffalo Bills Fan.", "Student.", "Teacher."],
         typeSpeed: 0,
         startDelay: 300,
         backSpeed: 50,

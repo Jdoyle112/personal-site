@@ -13,9 +13,8 @@
 			<div class="title">
 				<h1><?php the_title(); ?></h1>
 			</div>
-			
 		</div>
-
+		<div class="blog-underline"></div>
 		<div class="content">
 			<div class="container">
 				<div class="entry-content">
