@@ -35,7 +35,7 @@ $url = $image[0];
 	<div class="section content">
 		<div class="container">
 			<div class="left-side">
-				<?php echo do_shortcode('[searchandfilter id="44" show="results"]');  ?>
+				<?php echo do_shortcode('[searchandfilter id="16" show="results"]');  ?>
 				<?php if ( have_posts() ) : ?>
 					<?php
 					// Start the loop.
