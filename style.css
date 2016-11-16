@@ -415,7 +415,7 @@ animation: BgAnimation 29s ease infinite;
 
 .featured-area .title {
 	align-self: center;
-	background: rgba(0, 0, 0, 0.5);
+	background: rgba(0, 0, 0, 0.75);
 	padding: 15px 35px;
 }
 
