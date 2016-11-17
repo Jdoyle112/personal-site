@@ -526,3 +526,7 @@ form.searchandfilter h3{
 	padding: 5px 0;
 }
 
+.shareaholic-share-buttons-container.floated {
+	display: none !important;
+}
+
