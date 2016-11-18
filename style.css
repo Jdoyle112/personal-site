@@ -395,6 +395,21 @@ animation: BgAnimation 29s ease infinite;
 	background-color: white;
 }
 
+.nf-form-cont .nf-before-form-content {
+	display: none;
+}
+
+.nf-form-cont input {
+	border: 1px solid;
+	border-radius: 3px;
+	padding: 5px;
+}
+
+.nf-form-cont input#nf-field-4 {
+	background-color: rgba( 0, 183, 205, 1 );
+	color: white;
+}
+
 
 
 .typed-cursor{
