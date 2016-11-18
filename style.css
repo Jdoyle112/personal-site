@@ -349,7 +349,13 @@ animation: BgAnimation 29s ease infinite;
 
 
 .contact {
-	background-color: #ffce00 !important;
+	padding-top: 0;
+	background-color: #0375b4;
+    color: white;
+}
+
+.contact .heading h2 {
+	color: white !important;
 }
 
 .contact .underline {
@@ -362,6 +368,21 @@ animation: BgAnimation 29s ease infinite;
 
 .contact .content {
 	width: 60%;
+	text-align: center;
+}
+
+.contact .content p {
+	font-size: 22px;
+	font-weight: 300;
+}
+
+.contact .content a {
+	text-decoration: underline;
+	font-style: italic;
+	font-size: 22px;
+	font-family: 'Lato';
+	color: white;
+	text-shadow: 1px 1px grey;
 }
 
 .contact .btn {

@@ -524,18 +524,6 @@ get_header(); ?>
 	</div>
 </div>
 
-	<div class="section contact" id="contact">
-		<div class="container">
-			<div class="heading">
-				<h2>Contact</h2>
-				<p>"If I had asked people what they wanted, they would have said faster horses."</p>
-				<span>- Henry Ford</span>
-				<div class="underline"></div>
-			</div>
-			<div class="content">
-				<?php echo do_shortcode('[ninja_form id=1]'); ?>
-			</div>
-		</div>
-	</div>
+
 
 <?php get_footer(); ?>
