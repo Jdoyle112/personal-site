@@ -543,6 +543,18 @@ article h2 {
 	color: #4c4c4c !important;
 }
 
+article {
+	padding-bottom: 60px;
+}
+
+article ul.shareaholic-share-buttons {
+	margin: 0 !important;
+}
+
+article ul.shareaholic-share-buttons > li:first-child {
+	padding-left: 0 !important;
+}
+
 
 /* search filter results */
 
@@ -566,3 +578,21 @@ form.searchandfilter h3{
 	display: none !important;
 }
 
+@media (max-width: 1100px){
+	.blog section.content {
+		width: 80%;
+	}
+}
+
+@media (max-width: 750px){
+	.blog section.content .left-side {
+		width: 100%;
+		padding-right: 0;
+	}
+	.blog section.content .right-side {
+		width: 100%;
+	}
+	article .content {
+		width: 80%;
+	}
+}
