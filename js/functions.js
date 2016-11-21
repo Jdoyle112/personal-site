@@ -206,7 +206,7 @@
         cursorChar: "|"
     });
 
-    $('.projects .content').hoverGrid();
+   // $('.projects .content').hoverGrid();
 
     var init = 0;
     /*$('.skill ul > li').css('display','none');*/
@@ -228,4 +228,32 @@
             init++;
         });
 	} );
+
+	// boxes slide open content
+	$('.item').click(function(){
+		$('.item-content .text h2').html('');
+		$('.item-content .text p').html('');
+		$('.item-content .image img').remove();
+		$('.item-content .text a').remove();
+
+		var content = $(this).find("p").text();
+		var title = $(this).find('h2').text();
+		var img = $(this).find('img').clone();
+		var link = $(this).find('a').clone();
+
+		$('.item-content .text h2').html(title);
+		$('.item-content .text p').html(content);
+		$('.item-content .image').append(img);
+		$('.item-content .text').append(link);
+
+		$('.item-content').css('max-height', '1000px');
+		$('.item-content').css('margin-bottom', '80px');
+	});
+
+	// remove box
+	$('.glyphicon-remove').click(function(){
+		$('.item-content').css('max-height', '0');
+		$('.item-content').css('margin-bottom', '0');
+	});
+
 } )( jQuery );
