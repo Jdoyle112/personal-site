@@ -215,13 +215,12 @@ get_header(); ?>
 					</div>       
 					<div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">       
 					    <div class="item">
-						        <img width="100%" height="300" src="<?php echo $uploads['url']; ?>/stock.png" alt="my image" title="my image" />
+						        <img width="100%" height="300" src="<?php echo $uploads['url']; ?>/banner-1800x690.png" alt="my image" title="my image" />
 						        <div class="caption" style="display: none;">
-						            <h2>Stock Scrapper Tool</h2>
+						            <h2>Posts Navigation Slider Plugin</h2>
 						            <div class="underline"></div>
-									<a href="https://github.com/Jdoyle112/stock_scrape" style="display: hidden">View Site</a>
-										<p>The stock scrapper tool is a project born from a hypothesis. I assumed with the rise of online brokers, there are more amateur investors than ever, who may be blindly listening to the "experts" stock picks.
-											I built a tool in PHP to take a user inputted url (an archive page of blog posts), loop through all the posts in the archives, grab the stock tickers from each page, and store them in a database with the date published. I then took the data and analyzed the % increase in price on average for various amounts of time past the published date for each article.</p>
+									<a href="https://wordpress.org/plugins/posts-navigation-slider/" style="display: hidden">View Site</a>
+										<p>The Posts Navigation Slider will add navigation arrows to the specified posts creating a horizontal slider effect among posts. Use the plugin to add additonal navigation to your sites blog posts, with many customization options.</p>
 						        </div>
 						    
 					    </div>  
