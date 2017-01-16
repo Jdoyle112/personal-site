@@ -471,3 +471,20 @@ function basic_cpts() {
 }
 add_action( 'init', 'basic_cpts' );
 
+function rest_api_posts() {
+	$labels = array(
+		'name' => _x('REST Api Posts', 'taxonomy general name'),
+		'singular_name' => _x('REST Api Post', 'taxonomy singular name')
+	);
+
+    $args = array(
+        'public' => true,
+        'labels'  => $labels,
+        'show_ui' => true,
+        'rewrite' => array( 'slug' => 'rest_api_posts' ),
+        'show_in_rest' => true
+    );
+    register_post_type( 'rest_api', $args );
+}
+add_action( 'init', 'rest_api_posts' );
+
