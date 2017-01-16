@@ -482,7 +482,9 @@ function rest_api_posts() {
         'labels'  => $labels,
         'show_ui' => true,
         'rewrite' => array( 'slug' => 'rest_api_posts' ),
-        'show_in_rest' => true
+        'show_in_rest' => true,
+        'rest_controller_class' => 'WP_REST_Posts_Controller',
+        'supports' => array('title', 'editor', 'thumbnail', 'excerpt')
     );
     register_post_type( 'rest_api', $args );
 }
